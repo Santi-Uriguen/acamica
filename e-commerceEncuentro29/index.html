@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculandia</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <img src="" alt="loguito">
+        <h1>Zapatulis</h1>
+        <nav>
+            <ul>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="catalog" class="catalog">
+            <div class="product-container" id="product-container">
 
+                <button id="sort" class="sort-btn">Ordenar de menor a mayor precio</button>
+
+                <template>
+                    <div class="product-card" id="shoe-1">
+                        <img src="" alt="shoe-1">
+                        <p></p>
+                        <button id="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </template>
+
+            </div>
+        </section>
+        <aside id="cart">
+            <article id="cart-container" class="hidden">
+                
+                <template>
+                    <div id="cart-product">
+                        <img src="" alt="">
+                        <button>Eliminar</button>
+                    </div>
+                </template>
+
+                <button id="buy-btn"></button>
+            </article>
+
+
+
+            <article id="personal-data" class="hidden">
+                <form action="">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name">
+
+                    <label for="last-name">Apellido</label>
+                    <input type="text" id="last-name" >
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" >
+
+                    <label for="phone">Teléfono</label>
+                    <input type="number" id="phone" >
+
+                    <label for="delivery">A la casa</label>
+                    <input type="radio" id="delivery" value="delivery">
+
+                    <label for="pickup">Buscar en sucursal</label>
+                    <input type="radio" id="pickup" value="pickup">
+
+                    <input type="button" value="Ver métodos de pago" class="btn payment" id="payment-btn">
+                </form>
+            </article>
+
+            <article id="billing-info" class="hidden">
+                <form action="">
+                    <label for="card-number">Número de tarjeta</label>
+                    <input type="number" name="card-number">
+
+                    <label for="card-code">Código de tarjeta</label>
+                    <input type="number" maxlength="3" name="card-code">
+
+                    <label for="expire">Fecha de vencimiento</label>
+                    <input type="date" name="expire">
+
+                    <input type="button" value="Comprar" class="btn buy" id="buy-btn-final">
+                </form>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

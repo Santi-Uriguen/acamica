@@ -1,0 +1,23 @@
+main{
+    .hidden{
+        display: none;
+    }
+
+    .catalog{
+        .product-container{
+            .sort-btn{
+                width: 200px;
+                height: 35px;
+            }
+        }
+
+    }
+
+    .product-card{
+        img{
+            width: 100px;
+        }
+    }
+
+}
+
