@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="" alt="logo">
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <div class="order">
+                <button id="mayMen">Ordenar por precio (mayor a menor)</button>
+                <button id="menMay">Ordenar por precio (menor a mayor)</button>
+                <button id="AaZ">Ordenar alfabéticamente (de A a Z)</button>
+                <button id="ZaA"> ORdenar alfabéticamente (de Z a A)</button>
+            </div>
+            <div class="prod_container" id="prod_container">
+            </div>
+        </section>
+        <aside>
+            <section class="cart">
+                <h3>Carrito</h3>
+                <div id="cart_container">
+
+                </div>
+                <div class="compra">
+                    <h4 id="buy_value"></h4>
+                    <button id="buy_btn"></button>
+                </div>
+
+            </section>
+            <section id="personal-data" class="hidden">
+                <form action="">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name">
+
+                    <label for="last-name">Apellido</label>
+                    <input type="text" id="last-name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="phone">Teléfono</label>
+                    <input type="number" id="phone">
+
+                    <label for="delivery">A la casa</label>
+                    <input type="radio" id="delivery" value="delivery">
+
+                    <label for="pickup">Buscar en sucursal</label>
+                    <input type="radio" id="pickup" value="pickup">
+
+                    <input type="button" value="Ver métodos de pago" class="btn payment" id="payment-btn">
+                </form>
+            </section>
+            <section id="billing-info" class="hidden">
+                <form action="">
+                    <h2>Elegir forma de pago</h2>
+                    <label for="1pago">1 pago</label>
+                    <input type="radio" name="cuotas" id="1pago">
+                    <label for="cuotas3">3 cuotas sin interés</label>
+                    <input type="radio" name="cuotas" id="cuotas3">
+                    <label for="cuotas6">6 cuotas sin interés</label>
+                    <input type="radio" name="cuotas" id="cuotas6">
+
+                    <label for="card-number">Número de tarjeta</label>
+                    <input type="number" name="card-number">
+
+                    <label for="card-code">Código de tarjeta</label>
+                    <input type="number" maxlength="3" name="card-code">
+
+                    <label for="expire">Fecha de vencimiento</label>
+                    <input type="date" name="expire">
+
+                    <input type="button" value="Comprar" class="btn buy" id="buy-btn-final">
+                </form>
+            </section>
+        </aside>
+
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
