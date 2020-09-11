@@ -1,0 +1,65 @@
+main {
+  display: flex;
+  flex-direction: row;
+}
+main .products {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+main .products .order {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20%;
+}
+main .products .prod_container {
+  width: 80%;
+}
+main .products .product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+main .products .product-card ul {
+  padding-left: 0px;
+}
+main aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  border-left: 1px solid black;
+}
+main aside h3 {
+  text-align: center;
+}
+main aside .cart-product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: 2px solid black;
+}
+main aside .compra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main aside #buy_btn {
+  display: none;
+  justify-content: center;
+}
+main aside .hidden {
+  display: none;
+}
+main aside .hidden form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
